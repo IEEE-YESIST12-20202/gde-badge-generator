@@ -243,17 +243,10 @@
   }
 
   const changeShape = (type) => {
-    const original = document.querySelector('.select-container .select#original')
     const square = document.querySelector('.select-container .select#square')
     const circle = document.querySelector('.select-container .select#circle')
     shape = type
     switch (type) {
-      case 'original': {
-        original.setAttribute('selected', '')
-        square.removeAttribute('selected')
-        circle.removeAttribute('selected')
-        break
-      }
       case 'square': {
         square.setAttribute('selected', '')
         original.removeAttribute('selected')
