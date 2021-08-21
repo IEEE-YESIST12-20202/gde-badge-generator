@@ -293,7 +293,7 @@
   }
 
   const draw = () => {
-    const category = document.querySelector('input.category-input').value || 'Category Name'
+    const category = document.querySelector('input.category-input').value || 'Category/Track Name'
 
     if (image) {
       switch (shape) {
@@ -327,10 +327,10 @@
     const height = banner.height / banner.width * canvas.width
     const y = canvas.height - height
     const fontSize = canvas.width / 17.2
-    const fontY = y + height * 0.7
+    const fontY = y + height * 0.9
     ctx.drawImage(banner, 0, 0, banner.width, banner.height, 0, y, canvas.width, height)
 
-    ctx.fillStyle = '#757575'
+    ctx.fillStyle = '#1B415A'
     ctx.textAlign = 'center'
     ctx.textBaseline = 'middle'
     ctx.font = `${fontSize}px Google Sans, sans-serif`
