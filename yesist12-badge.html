@@ -235,7 +235,7 @@
   const canvas = document.querySelector('canvas')
   const ctx = canvas.getContext('2d')
   let image = ''
-  let shape = 'original'
+  let shape = 'square'
 
   const uploadImage = () => {
     document.querySelector('input.profile-input').click()
@@ -248,13 +248,11 @@
     switch (type) {
       case 'square': {
         square.setAttribute('selected', '')
-        original.removeAttribute('selected')
         circle.removeAttribute('selected')
         break
       }
       case 'circle': {
         circle.setAttribute('selected', '')
-        original.removeAttribute('selected')
         square.removeAttribute('selected')
         break
       }
